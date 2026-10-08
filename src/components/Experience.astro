@@ -1,0 +1,46 @@
+---
+const roles = [
+	{
+		organization: "IDEXX UK",
+		role: "Work experience",
+		detail: "Work experience placement",
+	},
+	{
+		organization: "Red Lion Inn",
+		role: "Hospitality",
+		detail: "An inn that hosts weddings",
+	},
+	{
+		organization: "Dairy farm",
+		role: "Calf rearer",
+		detail: "Practical experience in dairy farming",
+	},
+	{
+		organization: "Acroyds",
+		role: "Bar work",
+		detail: "A busy bar environment",
+	},
+];
+---
+
+<section class="experience-section" id="experience" aria-labelledby="experience-title">
+	<div class="section-inner">
+		<div class="section-heading">
+			<p class="eyebrow"><span class="eyebrow-rule"></span>Professional experience</p>
+			<h2 id="experience-title">A broad base of experience</h2>
+			<p>Work experience at IDEXX UK, alongside hands-on roles in agriculture and hospitality.</p>
+		</div>
+		<ol class="experience-list">
+			{roles.map((item, index) => (
+				<li>
+					<span class="experience-number" aria-hidden="true">0{index + 1}</span>
+					<div class="experience-identity">
+						<h3>{item.organization}</h3>
+						<p>{item.role}</p>
+					</div>
+					<p class="experience-detail">{item.detail}</p>
+				</li>
+			))}
+		</ol>
+	</div>
+</section>
