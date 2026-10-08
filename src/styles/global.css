@@ -357,6 +357,46 @@ h1 span {
 	text-align: right;
 }
 
+.experience-expanded {
+	grid-column: 2 / -1;
+	max-width: 62rem;
+	padding: 0.15rem 0 1.6rem;
+	color: var(--ink-soft);
+	font-size: 0.94rem;
+}
+
+.experience-expanded p {
+	margin-bottom: 0.9rem;
+}
+
+.experience-expanded h4 {
+	margin: 1.15rem 0 0.45rem;
+	color: var(--ink);
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.department-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.3rem 1.5rem;
+	margin: 0 0 1rem;
+	padding: 0;
+	color: var(--ink-soft);
+	list-style: none;
+}
+
+.department-list li::before {
+	margin-right: 0.45rem;
+	color: var(--blue);
+	content: "—";
+}
+
+.experience-reflection {
+	padding-left: 1rem;
+	border-left: 2px solid #a9bfd1;
+}
+
 .education-section {
 	padding-block: 5.5rem;
 	background: rgba(255, 255, 255, 0.84);
@@ -535,6 +575,10 @@ h1 span {
 		grid-column: 2;
 		justify-self: start;
 		text-align: left;
+	}
+
+	.experience-expanded {
+		grid-column: 2;
 	}
 
 	.education-entry {
